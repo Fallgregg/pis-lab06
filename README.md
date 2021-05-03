@@ -14,17 +14,17 @@ API вимагає ключ доступу для більшості маршр�
 
 # Ви можете додати параметри пагінації, сортування та фільтрації до своїх запитів API.
 ### Pagination
-** Option -- Example: **
+**Option -- Example:**
 1. limit -- ```/characters?limit=100```
 2. page -- ```/character?page=2 (limit default is 10)```
 3. offset -- ```/character?offset=3 (limit default is 10)```
 ### Sorting
-** Examples: **
+**Examples:**
 1. ```/character?sort=name:asc ```
 2. ```/quote?sort=character:desc```
 ### Filtering
 Фільтрація працює шляхом додавання простих виразів параметрів url до виразів пошуку mongodb і може бути застосована до будь-якого доступного ключа в моделях даних.
-** Option -- Example: **
+**Option -- Example:**
 1. match, negate match -- ```/character?name=Gandalf, /character?name!=Frodo```
 2. include, exclude -- ```/character?race=Hobbit,Human, /character?race!=Orc,Goblin```
 3. exists, doesn't exists -- ```/character?name, /character?!name```
